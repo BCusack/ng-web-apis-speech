@@ -1,0 +1,54 @@
+<p>
+	<a href="https://github.com/ng-web-apis/common" target="_blank">
+		@ng-web-apis/common
+	</a>
+	is a set of common utils for consuming Web APIs with Angular
+</p>
+
+<p>
+	Take a look at sample of usage our tokens:
+</p>
+
+<section>
+	<code>WINDOW</code>: your inner height is {{windowRef.innerHeight}}
+</section>
+
+<section>
+	<code>NAVIGATOR</code>: cookie enabled? {{navigator.cookieEnabled}}
+</section>
+
+<section>
+	<code>USER_AGENT</code>: your User Agent is {{userAgent}}
+</section>
+
+<section>
+	<code>PERFORMANCE</code>: performance.now on page start was {{performanceOnStart}}
+</section>
+
+<section>
+	<code>ANIMATION_FRAME</code>: performance of last frame is {{animationFrame30Fps$ | async}}
+</section>
+
+<section>
+	<code>LOCATION</code>: location is "{{location.href}}"
+</section>
+
+<section>
+	<code>LOCAL_STORAGE</code>: local storage {{localStorage.length ? 'has items' : 'is clean'}}
+</section>
+
+<section>
+	<code>SESSION_STORAGE</code>: session storage {{localStorage.length ? 'has items' : 'is clean'}}
+</section>
+
+<section>
+	<code>SPEECH_RECOGNITION</code>: is {{speechRecognition ? 'ready' : 'not ready'}}
+</section>
+
+<section>
+	<code>SPEECH_SYNTHESIS</code>: is {{speechSynthesis ? 'ready' : 'not ready'}}
+</section>
+
+<section>
+	<code>PAGE_VISIBILITY</code>: page visible — {{pageVisibility$ | async}}
+</section>
